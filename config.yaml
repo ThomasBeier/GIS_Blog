@@ -1,6 +1,6 @@
-baseurl: 'https://ThomasBeier.github.io/GIS_Blog'
-title: 'Assignments'
-pulishDir: 'docs'
+baseurl: https://ThomasBeier.github.io/GIS_Blog
+title: Assignments
+publishDir: docs
 theme: hugo-theme-clearwhite-gc
 languageCode: en-us
 disqusShortname: ''

@@ -1,0 +1,11 @@
+"0","library(DiagrammeR)"
+"2","Warning:"
+"2"," Paket ‘DiagrammeR’ wurde unter R Version 4.1.2 erstellt
+"
+"0","DiagrammeR::mermaid("""
+"0","graph LR"
+"0","A(Rounded)-->B[Rectangular]"
+"0","B-->C{A Rhombus}"
+"0","C-->D[Rectangle One]"
+"0","C-->E[Rectangle Two]"
+"0",""")"

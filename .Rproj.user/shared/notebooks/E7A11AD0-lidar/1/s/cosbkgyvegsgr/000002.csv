@@ -1,0 +1,21 @@
+"0","require(envimaR)"
+"2","Lade nötiges Paket: envimaR
+"
+"0","# MANDANTORY: defining the root folder DO NOT change this line"
+"0","rootDIR = ""E:/edu/agis"""
+"0",""
+"0","#-- Further customization of the setup by the user this section "
+"0","#-- can be freely customized only the definition of additional packages "
+"0","#-- and directory paths MUST be done using the two variables "
+"0","#-- appendpackagesToLoad and appendProjectDirList"
+"0","#-- feel free to remove this lines if you do not need them"
+"0","# define  additional packages comment if not needed"
+"0","appendpackagesToLoad = c(""tmap"")"
+"0","# define additional subfolders comment if not needed"
+"0","appendProjectDirList =  c(""data/lidar/"", ""data/lidar/l_raw/"", ""data/lidar/l_norm/"", ""data/lidar/l_normalized/"", ""data/lidar/l_raster/"")"
+"0",""
+"0","# MANDANTORY: calling the setup script also DO NOT change this line"
+"0","source(file.path(envimaR::alternativeEnvi(root_folder = rootDIR),""src/agis_setup1.R""),echo = TRUE)"
+"2","Error in file(filename, ""r"", encoding = encoding) : 
+  cannot open the connection
+"

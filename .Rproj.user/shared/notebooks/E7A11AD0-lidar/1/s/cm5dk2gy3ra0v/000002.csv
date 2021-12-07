@@ -1,0 +1,5 @@
+"0","# Calculation of metrics at the grid level"
+"0","h_mean <- lidR::grid_metrics(lidar_file, ~mean(Z), res = 1)"
+"2","Error in lidR::grid_metrics(lidar_file, ~mean(Z), res = 1) : 
+  object 'lidar_file' not found
+"
