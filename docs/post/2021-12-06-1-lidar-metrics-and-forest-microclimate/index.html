@@ -218,59 +218,11 @@ appendProjectDirList <span style="color:#ff79c6">=</span>  <span style="color:#5
 
 
 <span style="color:#6272a4"># MANDANTORY: calling the setup script also DO NOT change this line</span>
-<span style="color:#50fa7b">source</span>(<span style="color:#50fa7b">file.path</span>(envimaR<span style="color:#ff79c6">::</span><span style="color:#50fa7b">alternativeEnvi</span>(root_folder <span style="color:#ff79c6">=</span> rootDIR),<span style="color:#f1fa8c">&#34;src/agis_setup.R&#34;</span>),echo <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">TRUE</span>)
-</code></pre></div><pre tabindex="0"><code>## 
-## &gt; require(envimaR)
-## 
-## &gt; packagesToLoad = c(&quot;mapview&quot;, &quot;mapedit&quot;, &quot;tmap&quot;, &quot;raster&quot;, 
-## +     &quot;sf&quot;, &quot;dplyr&quot;, &quot;tidyverse&quot;, &quot;RStoolbox&quot;, &quot;randomForest&quot;, 
-## +     &quot;e1071&quot;, &quot;caret&quot;)
-## 
-## &gt; if (exists(&quot;appendpackagesToLoad&quot;) &amp;&amp; appendpackagesToLoad[[1]] != 
-## +     &quot;&quot;) {
-## +     packagesToLoad = append(packagesToLoad, appendpackagesToLoad)
-##  .... [TRUNCATED] 
-## 
-## &gt; if (!exists(&quot;rootDIR&quot;)) {
-## +     cat(&quot;variable rootDIR is NOT defined\n '~/edu/agis' is set by default&quot;)
-## +     rootDIR = &quot;~/edu/agis&quot;
-## + }
-## 
-## &gt; if (!exists(&quot;alt_env_id&quot;)) {
-## +     cat(&quot;variable alt_env_id is NOT defined\n 'COMPUTERNAME' is set by default&quot;)
-## +     alt_env_id = &quot;COMPUTERNAME&quot;
-## +  .... [TRUNCATED] 
-## variable alt_env_id is NOT defined
-##  'COMPUTERNAME' is set by default
-## &gt; if (!exists(&quot;alt_env_value&quot;)) {
-## +     cat(&quot;variable alt_env_value is NOT defined\n 'PCRZP' is set by default&quot;)
-## +     alt_env_value = &quot;PCRZP&quot;
-## + }
-## variable alt_env_value is NOT defined
-##  'PCRZP' is set by default
-## &gt; if (!exists(&quot;alt_env_root_folder&quot;)) {
-## +     cat(&quot;variable alt_env_root_folder is NOT defined\n 'F:/BEN/edu' is set by default&quot;)
-## +     alt_env_root_f .... [TRUNCATED] 
-## variable alt_env_root_folder is NOT defined
+<span style="color:#50fa7b">source</span>(<span style="color:#50fa7b">file.path</span>(envimaR<span style="color:#ff79c6">::</span><span style="color:#50fa7b">alternativeEnvi</span>(root_folder <span style="color:#ff79c6">=</span> rootDIR),<span style="color:#f1fa8c">&#34;src/agis_setup.R&#34;</span>),echo <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">FALSE</span>)
+</code></pre></div><pre tabindex="0"><code>## variable alt_env_id is NOT defined
+##  'COMPUTERNAME' is set by defaultvariable alt_env_value is NOT defined
+##  'PCRZP' is set by defaultvariable alt_env_root_folder is NOT defined
 ##  'F:/BEN/edu' is set by default
-## &gt; rootDir = envimaR::alternativeEnvi(root_folder = rootDIR, 
-## +     alt_env_id = alt_env_id, alt_env_value = alt_env_value, alt_env_root_folder = alt_e .... [TRUNCATED] 
-## 
-## &gt; projectDirList = c(&quot;data/&quot;, &quot;run/&quot;, &quot;src/&quot;, &quot;tmp&quot;, 
-## +     &quot;doc/&quot;)
-## 
-## &gt; if (exists(&quot;appendProjectDirList&quot;) &amp;&amp; appendProjectDirList[[1]] != 
-## +     &quot;&quot;) {
-## +     projectDirList = append(projectDirList, appendProjectDirList)
-##  .... [TRUNCATED] 
-## 
-## &gt; envrmt = envimaR::createEnvi(root_folder = rootDir, 
-## +     folders = projectDirList, fcts_folder = &quot;src/functions/&quot;, 
-## +     path_prefix = &quot;path_&quot;, l .... [TRUNCATED] 
-## 
-## &gt; raster::rasterOptions(tmpdir = envrmt$path_tmp)
-## 
-## &gt; rgdal::set_thin_PROJ6_warnings(TRUE)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#6272a4"># 1 - start script</span>
 <span style="color:#6272a4">#-----------------------------</span>
 <span style="color:#6272a4"># read a small normalized .las from the already existing las-catalog</span>
