@@ -27,7 +27,7 @@ Incoming solar radiation and wind speed are reduced by the forest canopy, dampen
 
 ### Apply and document these findings on base of the scripts of this units' experiences
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 
 # 0 - specific setup
 #-----------------------------

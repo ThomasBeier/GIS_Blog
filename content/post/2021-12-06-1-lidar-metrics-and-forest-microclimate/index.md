@@ -30,13 +30,7 @@ Incoming solar radiation and wind speed are reduced by the forest canopy, dampen
 # 0 - specific setup
 #-----------------------------
 require(envimaR)
-```
 
-```
-## Lade nötiges Paket: envimaR
-```
-
-```r
 # MANDANTORY: defining the root folder DO NOT change this line
 rootDIR = "~/edu/agis"
 
@@ -55,162 +49,6 @@ source(file.path(envimaR::alternativeEnvi(root_folder = rootDIR),"src/agis_setup
 ##  'COMPUTERNAME' is set by defaultvariable alt_env_value is NOT defined
 ##  'PCRZP' is set by defaultvariable alt_env_root_folder is NOT defined
 ##  'F:/BEN/edu' is set by default
-```
-
-```
-## Lade nötiges Paket: mapview
-```
-
-```
-## Lade nötiges Paket: mapedit
-```
-
-```
-## Lade nötiges Paket: tmap
-```
-
-```
-## Registered S3 methods overwritten by 'stars':
-##   method             from
-##   st_bbox.SpatRaster sf  
-##   st_crs.SpatRaster  sf
-```
-
-```
-## Lade nötiges Paket: raster
-```
-
-```
-## Lade nötiges Paket: sp
-```
-
-```
-## Lade nötiges Paket: sf
-```
-
-```
-## Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1
-```
-
-```
-## Lade nötiges Paket: dplyr
-```
-
-```
-## 
-## Attache Paket: 'dplyr'
-```
-
-```
-## Die folgenden Objekte sind maskiert von 'package:raster':
-## 
-##     intersect, select, union
-```
-
-```
-## Die folgenden Objekte sind maskiert von 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## Die folgenden Objekte sind maskiert von 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```
-## Lade nötiges Paket: tidyverse
-```
-
-```
-## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --
-```
-
-```
-## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.5     v stringr 1.4.0
-## v tidyr   1.1.4     v forcats 0.5.1
-## v readr   2.0.2
-```
-
-```
-## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x tidyr::extract() masks raster::extract()
-## x dplyr::filter()  masks stats::filter()
-## x dplyr::lag()     masks stats::lag()
-## x dplyr::select()  masks raster::select()
-```
-
-```
-## Lade nötiges Paket: RStoolbox
-```
-
-```
-## Lade nötiges Paket: randomForest
-```
-
-```
-## randomForest 4.6-14
-```
-
-```
-## Type rfNews() to see new features/changes/bug fixes.
-```
-
-```
-## 
-## Attache Paket: 'randomForest'
-```
-
-```
-## Das folgende Objekt ist maskiert 'package:ggplot2':
-## 
-##     margin
-```
-
-```
-## Das folgende Objekt ist maskiert 'package:dplyr':
-## 
-##     combine
-```
-
-```
-## Lade nötiges Paket: e1071
-```
-
-```
-## 
-## Attache Paket: 'e1071'
-```
-
-```
-## Das folgende Objekt ist maskiert 'package:raster':
-## 
-##     interpolate
-```
-
-```
-## Lade nötiges Paket: caret
-```
-
-```
-## Lade nötiges Paket: lattice
-```
-
-```
-## 
-## Attache Paket: 'caret'
-```
-
-```
-## Das folgende Objekt ist maskiert 'package:purrr':
-## 
-##     lift
-```
-
-```
-## Lade nötiges Paket: lidR
 ```
 
 ```r
@@ -240,13 +78,8 @@ plot(x = sd_first_return_1m, main = "sd of first returns in 1 m grid")
 LAD <- voxel_metrics(las, func = LAD(Z), res = 5)
 LAD <- na.omit(LAD)
 plot(LAD, size = 10, color = "lad", colorPalette = heat.colors(50))
-```
 
-```
-## Attribute 'z' renamed 'Z' to match with default attribute names.
-```
 
-```r
 # Shannon-Index of LAD
 LAD_Shannon <- voxel_metrics(las, func = entropy(Z), res = 5)
 LAD_Shannon <-na.omit(LAD_Shannon)
