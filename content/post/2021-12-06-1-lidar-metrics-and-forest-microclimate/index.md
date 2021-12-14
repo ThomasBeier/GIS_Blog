@@ -41,7 +41,9 @@ appendProjectDirList =  c("data/lidar_org/normalized/")
 
 
 # MANDANTORY: calling the setup script also DO NOT change this line
-source(file.path(envimaR::alternativeEnvi(root_folder = rootDIR),"src/agis_setup.R"),echo = FALSE)
+source(file.path(envimaR::alternativeEnvi(root_folder = rootDIR),"src/agis_setup.R"), 
+       echo = FALSE,
+       local = knitr::knit_global())
 ```
 
 ```

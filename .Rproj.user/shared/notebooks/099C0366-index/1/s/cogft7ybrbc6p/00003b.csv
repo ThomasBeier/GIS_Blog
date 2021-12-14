@@ -1,4 +1,0 @@
-"0","plot(LAD, size = 10, color = ""lad"", colorPalette = heat.colors(50))
-"
-"2","Attribute 'z' renamed 'Z' to match with default attribute names.
-"

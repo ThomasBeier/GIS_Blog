@@ -8,9 +8,6 @@ image:       ""
 categories: ["aGIS"]
 tags: ["task"]
 toc: true
-output:
-  blogdown::html_page:
-    keep_md: yes
 weight: 100
 ---
 
